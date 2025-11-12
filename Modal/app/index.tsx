@@ -1,15 +1,14 @@
 import React from 'react';
 import {Pressable, StyleSheet, Text} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import { PressableComponent } from '@/components/presscomponent'; // show modal message -pressable component tehty erikseen komponentit -kansioon
+
 
 const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Pressable
-          onPress={() => console.log('Pressed')}>
-            <Text style={styles.text}>Show modal message</Text>
-          </Pressable>
+        <PressableComponent/>
       </SafeAreaView>
     </SafeAreaProvider>
   );
